@@ -1,6 +1,6 @@
 {
 	"name": "gulp-webp-html-nosvg-local",
-	"version": "1.2.3",
+	"version": "1.2.4",
 	"description": "Replaces the <img> tag with <picture> <source> <img> in HTML files. No SVG, GIF format and data- support",
 	"main": "index.js",
 	"dependencies": {

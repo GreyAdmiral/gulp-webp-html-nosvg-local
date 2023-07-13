@@ -1,6 +1,6 @@
 # gulp-webp-html-nosvg-local
 
-This is a modified version of the plugin [gulp-webp-html-local](https://www.npmjs.com/package/gulp-webp-html-local). Here was fixed thebug that added two dots before webp to the final html file. No SVG format. The mode is possible only for relative links.
+This is a modified version of the plugin [gulp-webp-html-nosvg](https://www.npmjs.com/package/gulp-webp-html-nosvg). Here was fixed thebug that added two dots before webp to the final html file. No SVG format. The mode is possible only for relative links.
 
 ## Example
 ```html
@@ -55,9 +55,11 @@ gulp.task('html',function(){
         .pipe(webphtml())
         .pipe(gulp.dest('./public/'))
 });
+```
 
 # or
 
+```javascript
 gulp.task('html',function(){
     gulp.src('./assets/**/*.html')
         .pipe(webphtml(true))
